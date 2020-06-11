@@ -2,7 +2,7 @@
   "name": "advent-of-code",
   "version": "1.0.0",
   "description": "advent of code challenge",
-  "main": "day1.js",
+  "main": "",
   "scripts": {
     "start": "nodemon"
   },
@@ -11,9 +11,7 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/yishuenlo/adventOfCode19.git"
