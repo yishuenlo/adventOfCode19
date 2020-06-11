@@ -1,0 +1,25 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "advent of code challenge",
+  "main": "day1.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "Yishuen Lo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yishuenlo/adventOfCode19.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yishuenlo/adventOfCode19/issues"
+  },
+  "homepage": "https://github.com/yishuenlo/adventOfCode19#readme"
+}
