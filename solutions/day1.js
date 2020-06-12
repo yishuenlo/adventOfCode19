@@ -22,6 +22,7 @@ function moduleFuel() {
   });
 }
 
+//calculate fuel for fuel
 function fuelForFuel(mass) {
   let fuel = Math.floor(mass / 3) - 2;
   if (fuel < 0) return 0;
@@ -30,7 +31,7 @@ function fuelForFuel(mass) {
 
 function calcFuel(data) {
   //convert data to array
-  const modules = data.toString().split("\n");
+  const modules = data.split("\n");
 
   //calculate fuel
   const fuel = modules.reduce(
@@ -42,13 +43,14 @@ function calcFuel(data) {
 }
 
 //5105716
-function totalModuleFuel() {
+function solution() {
   fs.readFile(__dirname + "../../challenges/day1.txt", (err, data) => {
     if (err) console.log("ERROR, CANNOT FIND FILE");
-
+    data = data.toString();
+    
     //calculate fuel
     console.log(calcFuel(data));
   });
 }
 
-totalModuleFuel();
+solution();
