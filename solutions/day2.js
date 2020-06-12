@@ -1,6 +1,12 @@
 //https://adventofcode.com/2019/day/2
 
+//grab file info and save in 'input'
 const fs = require("fs");
+const input = fs
+  .readFileSync("./puzzles/day2.txt")
+  .toString()
+  .split(",")
+  .map((x) => parseInt(x));
 
 //PART 1
 //starting at 0, every other 4 index gives an instruction
@@ -92,14 +98,4 @@ function gravityAssist(data, target) {
 //noun = 49
 //verb = 25
 
-fs.readFile(__dirname + "../../puzzles/day2.txt", (err, data) => {
-  if (err) console.log("ERROR");
-  data = data
-    .toString()
-    .split(",")
-    .map((x) => parseInt(x));
-
-  console.log(gravityAssist(data, 8026744));
-  // console.log(program(data, (noun = 19), (verb = 49)));
-  // console.log(program(data, noun = 2) - program(data, noun = 1));
-});
+console.log(gravityAssist(input, 19690720));
