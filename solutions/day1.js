@@ -44,7 +44,7 @@ function calcFuel(data) {
 
 //5105716
 function solution() {
-  fs.readFile(__dirname + "../../challenges/day1.txt", (err, data) => {
+  fs.readFile(__dirname + "../../puzzles/day1.txt", (err, data) => {
     if (err) console.log("ERROR, CANNOT FIND FILE");
     data = data.toString();
     
