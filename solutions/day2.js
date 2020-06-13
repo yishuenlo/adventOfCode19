@@ -23,8 +23,6 @@ const input = fs
 //2,3,11,0
 //arr[3] * arr[11] = arr[0]
 
-let data = [1, 9, 10, 3, 2, 3, 11, 0, 99, 30, 40, 50];
-
 function program(data, noun = 12, verb = 2) {
   //create copy of original data
   const intcode = [...data];
